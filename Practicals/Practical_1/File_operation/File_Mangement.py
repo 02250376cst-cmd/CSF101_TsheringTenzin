@@ -29,7 +29,7 @@ create_directory('new_folder')
 
 import os
 def list_files(directory):
-    files = os.listir(directory)
+    files = os.listdir(directory)
     for file in files:
         print(file)
 print("Files in the current directory:")
@@ -43,10 +43,10 @@ copy_file('renamed_sample.txt', 'new_folder/copied_sample.txt')
 
 import csv
 def read_csv_file(filename):
-    with open(filename, 'r', newline='') as file:
+    with open (filename, 'r', newline='') as file:
         csv_reader = csv.reader(file)
         for row in csv_reader:
-            print(', '.join(row))
+            print(','.join(row))
 with open('sample.cvs', 'w', newline='') as file:
     csv_writer = csv.writer(file)
     csv_writer.writerow(['Name', 'Age', 'City'])
