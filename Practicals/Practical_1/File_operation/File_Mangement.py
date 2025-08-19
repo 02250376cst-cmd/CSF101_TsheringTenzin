@@ -47,7 +47,7 @@ def read_csv_file(filename):
         csv_reader = csv.reader(file)
         for row in csv_reader:
             print(', '.join(row))
- with open('sample.cvs', 'w', newline='') as file:
+with open('sample.cvs', 'w', newline='') as file:
     csv_writer = csv.writer(file)
     csv_writer.writerow(['Name', 'Age', 'City'])
     csv_writer.writerow(['Proko', '19', 'Thimpphu'])
