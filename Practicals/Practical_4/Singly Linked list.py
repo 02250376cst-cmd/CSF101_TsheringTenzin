@@ -34,7 +34,7 @@ class LinkedList:
         for _ in range(position - 1):
             if current is None:
                 raise IndexError("position out of range")
-            currernt = current.next
+            current = current.next
         new_node.next = current.next
         current.next = new_node
     
